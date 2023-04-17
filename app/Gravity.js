@@ -19,7 +19,6 @@ export default function Template() {
   const { volume, setVolume, sharedVolume } = useVolume();
 
   const acceleration = useSharedValue(0);
-
   const sensor = useAnimatedSensor(SensorType.GRAVITY);
 
   useFrameCallback((frameInfo) => {
@@ -27,11 +26,8 @@ export default function Template() {
     if (!dt) {
       return;
     }
-
     acceleration.value += sensor.sensor.value.x * dt * 0.0001;
-
     sharedVolume.value += acceleration.value * dt * 0.001;
-
     sharedVolume.value = Math.min(sharedVolume.value, 1);
     sharedVolume.value = Math.max(sharedVolume.value, 0);
 

@@ -16,7 +16,8 @@ export default function Template() {
   const animatedStyle = useAnimatedStyle(() => {
     const { yaw } = sensor.sensor.value;
 
-    console.log(`This is the yaw: ${yaw}`)
+    // console.log(`This is the yaw: ${yaw}`)
+
     return {};
   });
 

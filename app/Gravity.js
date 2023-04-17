@@ -28,16 +28,18 @@ export default function Template() {
       return;
     }
 
-    acceleration.value += sensor.sensor.value.x * dt * 0.0001;
+    sharedVolume.value += sensor.sensor.value.x * dt * 0.0001;
 
-    sharedVolume.value += acceleration.value * dt * 0.001;
-
-    sharedVolume.value = Math.min(sharedVolume.value, 1);
-    sharedVolume.value = Math.max(sharedVolume.value, 0);
-
-    if (sharedVolume.value === 0 || sharedVolume.value === 1) {
-      acceleration.value = 0;
-    }
+    // acceleration.value += sensor.sensor.value.x * dt * 0.0001;
+    //
+    // sharedVolume.value += acceleration.value * dt * 0.001;
+    //
+    // sharedVolume.value = Math.min(sharedVolume.value, 1);
+    // sharedVolume.value = Math.max(sharedVolume.value, 0);
+    //
+    // if (sharedVolume.value === 0 || sharedVolume.value === 1) {
+    //   acceleration.value = 0;
+    // }
   });
 
   const sliderViewStyle = useAnimatedStyle(() => {

@@ -53,35 +53,6 @@ export default function Template() {
           </TouchableOpacity>
         ))}
       </View>
-      {/*<View style={{ flexDirection: 'row' }}>*/}
-      {/*  {digits.map((digit, i) => (*/}
-      {/*    <Pressable*/}
-      {/*      key={i}*/}
-      {/*      onPress={() =>*/}
-      {/*        setDigits((cur) => {*/}
-      {/*          const update = [...cur];*/}
-      {/*          update[i] = update[i] === 0 ? 1 : 0;*/}
-      {/*          return update;*/}
-      {/*        })*/}
-      {/*      }*/}
-      {/*      style={{*/}
-      {/*        backgroundColor: 'white',*/}
-      {/*        flex: 1,*/}
-      {/*        margin: 5,*/}
-      {/*        height: 75,*/}
-      {/*        alignItems: 'center',*/}
-      {/*        justifyContent: 'center',*/}
-      {/*        borderRadius: 5,*/}
-      {/*      }}*/}
-      {/*    >*/}
-      {/*      <Text*/}
-      {/*        style={{ fontWeight: 'bold', fontSize: 30, color: 'magenta' }}*/}
-      {/*      >*/}
-      {/*        {digit}*/}
-      {/*      </Text>*/}
-      {/*    </Pressable>*/}
-      {/*  ))}*/}
-      {/*</View>*/}
     </View>
   );
 }

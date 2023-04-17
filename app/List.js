@@ -23,7 +23,7 @@ export default function Template() {
             onPress={() => setSelectedValue(index)}
             style={{
               backgroundColor: selectedValue === index ? 'magenta' : 'transparent',
-              color: 'white', borderColor: selectedValue === index ? 'magenta' : 'white', borderWidth: 1, width: 30, height: 30, margin: 5, textAlign: 'center', padding: 5
+              color: 'white', fontWeight: '500', borderColor: selectedValue === index ? 'magenta' : 'white', borderWidth: 1, width: 30, height: 30, margin: 5, textAlign: 'center', padding: 5
           }} key={index}>{index}</Text>
         ))}
       </View>

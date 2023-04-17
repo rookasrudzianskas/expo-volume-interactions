@@ -22,7 +22,8 @@
     "react-native-screens": "~3.20.0",
     "react-native-web": "~0.18.7",
     "expo-av": "~13.2.1",
-    "@react-native-community/slider": "4.4.2"
+    "@react-native-community/slider": "4.4.2",
+    "@react-native-picker/picker": "2.4.8"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
